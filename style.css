@@ -1,0 +1,38 @@
+.grid-container {
+display: grid;
+gap: 10px;
+grid-template-areas: 
+"navbar"
+"title"
+"option"
+"paragraph";
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+
+.navbar {
+    grid-area: navbar;
+    width: 100%;
+    margin-top: auto;
+}
+
+.container {
+    grid-area: paragraph;
+}
+
+
+@media (min-width: 960px){
+    .grid-container{
+        grid-template: 
+        "navbar"
+        "title"
+        "option" "paragraph";
+    }
+}
