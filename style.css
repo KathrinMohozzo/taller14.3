@@ -8,5 +8,6 @@ display: flex;
 
 }
 
-
-@media ()
+.left-align {
+    text-align: left;
+  }

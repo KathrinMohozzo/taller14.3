@@ -9,84 +9,51 @@
 </head>
 <body>
 
-  <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar scroll</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-mdb-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="#">Action</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Another action</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Submenu &raquo;
-                  </a>
-                  <ul class="dropdown-menu dropdown-submenu">
-                    <li>
-                      <a class="dropdown-item" href="#">Submenu item 1</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Submenu item 2</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
-                      <ul class="dropdown-menu dropdown-submenu">
-                        <li>
-                          <a class="dropdown-item" href="#">Multi level 1</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Multi level 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Submenu item 4</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Submenu item 5</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          </li> 
-            
-            
+          <li class="nav-item dropdown d-lg-none">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Opción 1</a></li>
+              <li><a class="dropdown-item" href="#">Opción 2</a></li>
+              <li><a class="dropdown-item" href="#">Opción 3</a></li>
+              <li><a class="dropdown-item" href="#">Opción 4</a></li>
+
+            </ul>
           </li>
+        
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+        <div class="d-none d-lg-block">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+
+
       </div>
     </div>
-  </nav>        
+  </nav>      
   
   
   
-  
+
 <div>
-  <div id="title">
+  <div id="title" style="margin: 2%;">
     <div class="text-dark-emphasis">
       <h2>Lorem ipsum...</h2>
     </div>
@@ -109,24 +76,85 @@
 </div>
 
 
+<div class="container text-center d-lg-flex flex-row">
+  <div class="d-none d-lg-block left-align" style="width: 25%;">
+    <ul class="list-group">
+      <li class="list-group-item">Opción 1</li>
+      <li class="list-group-item">Opción 2</li>
+      <li class="list-group-item">Opción 3</li>
+      <li class="list-group-item">Opción 4</li>
+    </ul>
+  </div>
 
-<div class="container" id="option">
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="p-3">
-        <ul class="list-group list-group-vertical">
-          <li class="list-group-item"><a href="#" class="link-secondary">Opción 1</a></li>
-          <li class="list-group-item"><a href="#" class="link-secondary">Opción 2</a></li>  
-          <li class="list-group-item"><a href="#" class="link-secondary">Opción 3</a></li>  
-          <li class="list-group-item"><a href="#" class="link-secondary">Opción 4</a></li>   
-        </ul>
-      </div>
+
+
+<div class="container text-center d-none d-lg-block">
+  <div class="row row-cols-3">
+    <div class="col mb-4 bg-light" align="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, excepturi rerum possimus ducimus accusantium illo culpa blanditiis tenetur ab tempore molestias.
     </div>
-
-      </div>
+    <div class="col mb-4 bg-light" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestiae velit ad. Atque, itaque nostrum recusandae, esse ducimus repellendus similique dicta magnam iste accusamus suscipit. Quo est eaque quam debitis!
     </div>
- 
+    <div class="col mb-4 bg-light" align="justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quaerat nulla sed maxime iusto dolores quos et voluptatibus velit dolore laboriosam vel corrupti accusamus aut, harum officiis enim amet magni!
+    </div> 
+    <div class="col mb-4 bg-light" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ad repellendus ratione cumque illo rerum, dolorem accusamus dolore corrupti voluptatibus ullam animi optio tenetur libero rem atque. Iure, ab unde.
+    </div>
+    <div class="col mb-4 bg-light" align="justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eum ducimus ad recusandae totam omnis, vel accusamus suscipit, impedit quam distinctio architecto facere? Animi consectetur unde minus, maxime officiis repudiandae.
+    </div>
+    <div class="col mb-4 bg-light" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, facere? Blanditiis, labore ut obcaecati maxime molestiae harum ullam eum eos cupiditate provident iusto quasi hic corrupti minima quo ipsam aliquid?
+    </div>
+    <div class="col mb-4 bg-light" align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque, iusto expedita vel accusantium laboriosam fuga tenetur aliquam placeat quam illum porro impedit dolores debitis omnis quibusdam, repellendus enim. Odio.
+    </div>
+  </div>
+</div>
+</div>
 
+
+
+
+<div class="container text-center d-lg-none">
+<div class="row row-cols-1">
+  <div class="col-md-6 mb-4 bg-light" align="justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure,
+    excepturi rerum
+    possimus
+    ducimus accusantium illo culpa blanditiis tenetur ab tempore molestias.
+  </div>
+  <div class="col-md-6 mb-4 bg-light" align="justify">a modi consequuntur debitis fuga temporibus expedita cumque ipsum at
+    praesentium unde
+    in
+    nesciunt laborum nulla! Illum error vitae laborum.
+  </div>
+  <div class="col-md-6 mb-4 bg-light" align="justify">Tempore praesentium cumque dignissimos impedit. Aperiam blanditiis
+    eveniet iusto
+    architecto
+    voluptas, debitis praesentium molestiae facilis est, nihil pariatur recusandae atque.
+  </div>
+  <div class="col-md-6 mb-4 bg-light" align="justify">Molestias unde quia minima eligendi vero! Facere vitae perferendis
+    nostrum assumenda
+    quo quasi
+    minus provident optio pariatur eius tenetur reiciendis.
+  </div>
+  <div class="col-md-6 mb-4 bg-light" align="justify">Cumque ullam, quis minima architecto sunt. Animi quod voluptatem
+    impedit architecto
+    suscipit,
+    velit odio officia sapiente temporibus alias maiores tempora at.
+  </div>
+  <div class="col-md-6 mb-4 bg-light" align="justify">Mollitia harum. Porro eius voluptatibus voluptas fugit neque maxime
+    nobis incidunt
+    cum quas
+    alias sed accusamus rerum enim, perspiciatis reprehenderit.
+  </div>
+  <div class="col-md-6 mb-4 bg-light" align="justify">Amet iusto quaerat laudantium distinctio magni. Perspiciatis, nisi
+    qui! Cum nulla
+    voluptate
+    vero nostrum repellendus libero eligendi quasi ullam quos.
+  </div>
+  <div class="col-md-6 mb-4 bg-light" align="justify">Deleniti sint quam excepturi tempore maxime saepe cumque
+    necessitatibus fuga autem
+    dolore
+    tempora quaerat, dolor officiis. Voluptate, sapiente.
+  </div>
+</div>
+</div>
 
 
 
